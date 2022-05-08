@@ -1,15 +1,23 @@
-# Right-Click to Calendar
-右クリックからGoogleカレンダーに予定を投稿できるChrome拡張です。  
-正規表現を使用して、日付とタイトルを自動で抜き出します。  
-ストアのURL: https://chrome.google.com/webstore/detail/right-click-to-calendar/femihkgadmhfmdlkjjfjcgleppfggadk?hl=ja
+# 本家(fork元)
+https://github.com/retrorocket/Right-Click-to-Calendar
 
-## 動作確認環境
-* OS: Windows 10 Pro ver 2004
-* Google Chrome: ver 84以上
+# todo
+・右クリックコンテキストメニューから一発でGoogle Calendar登録（現在時刻で登録しGoogle Calendarへ遷移）
 
-## 拡張機能の呼び出し方
-ブラウザ上でカレンダーに登録したいテキストを選択して右クリックしてください。  
-詳細は[拡張の配布ページ](https://chrome.google.com/webstore/detail/right-click-to-calendar/femihkgadmhfmdlkjjfjcgleppfggadk?hl=ja)を参照してください。
+# work-flow-design
+Webブラウザ上で文字選択
+↓
+右クリック
+↓
+コンテキストメニュー（本拡張機能アプリ）タイトル
+↓
+設定日時選択（デフォルト１時間）※オプションで変更可能？
+・現在時刻（１５分刻み？）
+・明日の現在時刻（１５分刻み？）
+・カスタマイズ（日付（カレンダーUI?）、時刻（時計UI？））
+↓
+内容選択（Google Calendar登録）
+・選択文字をタイトルにして登録（Bodyは空）
+・選択文字の先頭から２０文字をタイトルにして選択文字を詳細情報として登録
 
-## 問題がある場合
-issue、もしくはストアの問い合わせページからコメントを受け付けています。
+
